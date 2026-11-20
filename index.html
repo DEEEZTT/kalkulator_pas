@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kalkulator Meja</title>
+  <link rel="stylesheet" href="ui.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="calculator">
+    <form id="calculator-form" novalidate>
+      <label for="hasil">Hasil</label>
+      <input id="hasil" class="hasil" type="text" placeholder="—" readonly aria-live="polite">
+      <p id="rumus" aria-live="polite"></p>
+      <p id="pesan" role="status" aria-live="polite"></p>
+
+      <div class="number-pair">
+        <div class="number-field">
+          <label for="angka-pertama">Angka pertama</label>
+          <div class="input-row">
+            <input id="angka-pertama" class="angka" type="text" inputmode="decimal" placeholder="Contoh: 1.500" autocomplete="off">
+            <button class="backspace" type="button" data-hapus="angka-pertama" aria-label="Hapus satu karakter dari angka pertama" title="Hapus satu karakter"><span aria-hidden="true">&#9003;</span></button>
+          </div>
+        </div>
+        <div class="number-field">
+          <label for="angka-kedua">Angka kedua</label>
+          <div class="input-row">
+            <input id="angka-kedua" class="angka" type="text" inputmode="decimal" placeholder="Contoh: 12,5" autocomplete="off">
+            <button class="backspace" type="button" data-hapus="angka-kedua" aria-label="Hapus satu karakter dari angka kedua" title="Hapus satu karakter"><span aria-hidden="true">&#9003;</span></button>
+          </div>
+        </div>
+      </div>
+
+      <fieldset>
+        <legend>Pilih operasi</legend>
+        <div class="operations">
+          <button type="button" data-operasi="tambah" aria-label="Penjumlahan" aria-pressed="false"><b>+</b></button>
+          <button type="button" data-operasi="kurang" aria-label="Pengurangan" aria-pressed="false"><b>&minus;</b></button>
+          <button type="button" data-operasi="kali" aria-label="Perkalian" aria-pressed="false"><b>&times;</b></button>
+          <button type="button" data-operasi="bagi" aria-label="Pembagian" aria-pressed="false"><b>&divide;</b></button>
+        </div>
+      </fieldset>
+
+      <button class="clear" type="reset">Clear</button>
+    </form>
+    <section class="history" aria-labelledby="history-title">
+      <div class="history-heading">
+        <div><h2 id="history-title">Riwayat</h2></div>
+        <button id="hapus-riwayat" class="history-clear" type="button">Hapus</button>
+      </div>
+      <p id="riwayat-kosong">Belum ada hitungan.</p>
+      <ol id="daftar-riwayat" aria-live="polite"></ol>
+    </section>
+  </main>
+</body>
+</html>
