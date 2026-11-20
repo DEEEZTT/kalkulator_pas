@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Alur merancang aplikasi kalkulator</title>
+  <desc id="desc">Lima tahap rancangan aplikasi: tujuan, kebutuhan, alur, wireframe, dan mockup visual, beserta hasil dari setiap tahap.</desc>
+  <defs>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif;fill:#1d383d}.muted{fill:#5c7071}.teal{fill:#16766f}.small{font-size:16px}.label{font-size:15px;font-weight:700;letter-spacing:1.5px}.title{font-size:42px;font-weight:700;letter-spacing:-1.5px}.stage{font-size:22px;font-weight:700}.body{font-size:17px}.num{font-size:18px;font-weight:700;fill:#fff}.line{stroke:#b7cbc6;stroke-width:3}.card{fill:#fbfcfa;stroke:#cbd8d5;stroke-width:2}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#8aa9a3"/></marker>
+  </defs>
+  <rect width="1600" height="1000" fill="#edf3f1"/>
+  <rect x="0" y="0" width="1600" height="12" fill="#16766f"/>
+  <text x="100" y="105" class="label teal">RANCANGAN APLIKASI · 01</text>
+  <text x="100" y="170" class="title">Mulai dari masalah, bukan dari layar.</text>
+  <text x="100" y="212" class="body muted">Urutan kerja untuk mengubah kebutuhan menjadi antarmuka kalkulator yang bisa dipakai.</text>
+
+  <path d="M205 368H1395" class="line" marker-end="url(#arrow)"/>
+  <g transform="translate(100 290)">
+    <rect width="250" height="300" rx="14" class="card"/>
+    <circle cx="38" cy="42" r="22" fill="#16766f"/><text x="38" y="49" text-anchor="middle" class="num">1</text>
+    <text x="30" y="105" class="stage">Tujuan</text>
+    <text x="30" y="145" class="body muted"><tspan x="30">Membantu pengguna</tspan><tspan x="30" dy="25">menghitung dua angka</tspan><tspan x="30" dy="25">dengan empat operasi.</tspan></text>
+    <path d="M30 225H220" stroke="#dce6e2" stroke-width="2"/>
+    <text x="30" y="260" class="small teal">HASIL · tujuan produk</text>
+  </g>
+  <g transform="translate(395 290)">
+    <rect width="250" height="300" rx="14" class="card"/>
+    <circle cx="38" cy="42" r="22" fill="#16766f"/><text x="38" y="49" text-anchor="middle" class="num">2</text>
+    <text x="30" y="105" class="stage">Kebutuhan</text>
+    <text x="30" y="145" class="body muted"><tspan x="30">Dua input, tambah,</tspan><tspan x="30" dy="25">kurang, kali, bagi,</tspan><tspan x="30" dy="25">hasil, dan bersihkan.</tspan></text>
+    <path d="M30 225H220" stroke="#dce6e2" stroke-width="2"/>
+    <text x="30" y="260" class="small teal">HASIL · daftar fungsi</text>
+  </g>
+  <g transform="translate(690 290)">
+    <rect width="250" height="300" rx="14" class="card"/>
+    <circle cx="38" cy="42" r="22" fill="#16766f"/><text x="38" y="49" text-anchor="middle" class="num">3</text>
+    <text x="30" y="105" class="stage">Alur</text>
+    <text x="30" y="145" class="body muted"><tspan x="30">Isi angka → pilih</tspan><tspan x="30" dy="25">operasi → lihat hasil</tspan><tspan x="30" dy="25">atau pesan validasi.</tspan></text>
+    <path d="M30 225H220" stroke="#dce6e2" stroke-width="2"/>
+    <text x="30" y="260" class="small teal">HASIL · alur interaksi</text>
+  </g>
+  <g transform="translate(985 290)">
+    <rect width="250" height="300" rx="14" class="card"/>
+    <circle cx="38" cy="42" r="22" fill="#16766f"/><text x="38" y="49" text-anchor="middle" class="num">4</text>
+    <text x="30" y="105" class="stage">Wireframe</text>
+    <text x="30" y="145" class="body muted"><tspan x="30">Atur posisi field,</tspan><tspan x="30" dy="25">tombol, dan hasil</tspan><tspan x="30" dy="25">tanpa warna final.</tspan></text>
+    <path d="M30 225H220" stroke="#dce6e2" stroke-width="2"/>
+    <text x="30" y="260" class="small teal">HASIL · struktur layar</text>
+  </g>
+  <g transform="translate(1280 290)">
+    <rect width="220" height="300" rx="14" class="card"/>
+    <circle cx="38" cy="42" r="22" fill="#16766f"/><text x="38" y="49" text-anchor="middle" class="num">5</text>
+    <text x="30" y="105" class="stage">Visual</text>
+    <text x="30" y="145" class="body muted"><tspan x="30">Terapkan warna,</tspan><tspan x="30" dy="25">ukuran teks, state,</tspan><tspan x="30" dy="25">dan versi ponsel.</tspan></text>
+    <path d="M30 225H190" stroke="#dce6e2" stroke-width="2"/>
+    <text x="30" y="260" class="small teal">HASIL · mockup UI</text>
+  </g>
+
+  <rect x="100" y="660" width="1400" height="210" rx="16" fill="#1d383d"/>
+  <text x="145" y="720" class="label" fill="#b7d7d1">ATURAN SAAT BERPINDAH TAHAP</text>
+  <text x="145" y="775" font-size="25" font-weight="700" fill="#fff">Setiap elemen harus punya fungsi yang jelas.</text>
+  <text x="145" y="820" font-size="18" fill="#d0dfdc">Jangan menambahkan layar, data, atau tombol sebelum tahu kebutuhan yang dilayani.</text>
+  <text x="100" y="940" class="small muted">Kalkulator · Lembar perancangan awal</text>
+</svg>

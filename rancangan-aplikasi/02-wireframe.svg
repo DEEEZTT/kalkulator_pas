@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Wireframe kalkulator desktop dan ponsel</title>
+  <desc id="desc">Rancangan hitam putih kalkulator dalam layout desktop dan ponsel dengan dua input, empat operasi, hasil, dan tombol bersihkan.</desc>
+  <defs><style>
+    text{font-family:Arial,Helvetica,sans-serif;fill:#253a3d}.muted{fill:#687a7c}.small{font-size:15px}.label{font-size:15px;font-weight:700;letter-spacing:1.4px}.title{font-size:40px;font-weight:700;letter-spacing:-1px}.section{font-size:20px;font-weight:700}.stroke{fill:none;stroke:#91a2a1;stroke-width:2}.dark{fill:#dce3e1}.panel{fill:#fff;stroke:#c5d0ce;stroke-width:2}
+  </style></defs>
+  <rect width="1600" height="1000" fill="#f0f3f2"/>
+  <text x="95" y="94" class="label" fill="#16766f">RANCANGAN APLIKASI · 02</text>
+  <text x="95" y="155" class="title">Wireframe sebelum warna.</text>
+  <text x="95" y="194" font-size="17" class="muted">Susun urutan dan ukuran elemen terlebih dahulu.</text>
+
+  <text x="130" y="265" class="section">Desktop</text>
+  <rect x="130" y="290" width="850" height="590" rx="18" fill="#e2e8e6" stroke="#b8c6c3" stroke-width="2"/>
+  <rect x="160" y="320" width="790" height="530" rx="12" fill="#f8f9f8" stroke="#c5d0ce" stroke-width="2"/>
+  <rect x="160" y="320" width="790" height="48" rx="12" fill="#e1e7e5"/>
+  <circle cx="185" cy="344" r="6" fill="#aab8b5"/><circle cx="207" cy="344" r="6" fill="#aab8b5"/><circle cx="229" cy="344" r="6" fill="#aab8b5"/>
+  <rect x="340" y="392" width="430" height="410" rx="14" class="panel"/>
+  <rect x="366" y="418" width="42" height="42" rx="8" class="dark"/><text x="387" y="447" text-anchor="middle" font-size="24" fill="#687a7c">±</text>
+  <rect x="420" y="422" width="180" height="17" rx="4" class="dark"/><rect x="420" y="447" width="280" height="10" rx="4" fill="#e8edeb"/>
+  <text x="368" y="500" class="small muted">Angka pertama</text><rect x="368" y="512" width="374" height="46" rx="7" class="stroke"/>
+  <text x="368" y="585" class="small muted">Angka kedua</text><rect x="368" y="597" width="374" height="46" rx="7" class="stroke"/>
+  <text x="368" y="676" class="small muted">Operasi</text>
+  <g fill="#e1e7e5" stroke="#aab8b5" stroke-width="1.5"><rect x="368" y="688" width="86" height="52" rx="7"/><rect x="464" y="688" width="86" height="52" rx="7"/><rect x="560" y="688" width="86" height="52" rx="7"/><rect x="656" y="688" width="86" height="52" rx="7"/></g>
+  <text x="411" y="723" text-anchor="middle" font-size="22" fill="#526567">+</text><text x="507" y="723" text-anchor="middle" font-size="22" fill="#526567">−</text><text x="603" y="723" text-anchor="middle" font-size="22" fill="#526567">×</text><text x="699" y="723" text-anchor="middle" font-size="22" fill="#526567">÷</text>
+  <text x="368" y="770" class="small muted">Hasil</text><rect x="368" y="779" width="374" height="1" fill="#c5d0ce"/>
+
+  <text x="1090" y="265" class="section">Ponsel</text>
+  <rect x="1080" y="290" width="330" height="590" rx="34" fill="#dce3e1" stroke="#aab8b5" stroke-width="3"/>
+  <rect x="1097" y="316" width="296" height="538" rx="23" fill="#f8f9f8" stroke="#c5d0ce" stroke-width="2"/>
+  <rect x="1180" y="326" width="130" height="8" rx="4" fill="#c5d0ce"/>
+  <rect x="1120" y="367" width="36" height="36" rx="7" class="dark"/><rect x="1168" y="373" width="164" height="14" rx="4" class="dark"/><rect x="1168" y="395" width="190" height="8" rx="4" fill="#e8edeb"/>
+  <text x="1120" y="442" class="small muted">Angka pertama</text><rect x="1120" y="450" width="250" height="43" rx="7" class="stroke"/>
+  <text x="1120" y="522" class="small muted">Angka kedua</text><rect x="1120" y="530" width="250" height="43" rx="7" class="stroke"/>
+  <text x="1120" y="604" class="small muted">Operasi</text>
+  <g fill="#e1e7e5" stroke="#aab8b5" stroke-width="1.5"><rect x="1120" y="614" width="118" height="48" rx="7"/><rect x="1250" y="614" width="120" height="48" rx="7"/><rect x="1120" y="672" width="118" height="48" rx="7"/><rect x="1250" y="672" width="120" height="48" rx="7"/></g>
+  <text x="1179" y="646" text-anchor="middle" font-size="20" fill="#526567">+</text><text x="1310" y="646" text-anchor="middle" font-size="20" fill="#526567">−</text><text x="1179" y="704" text-anchor="middle" font-size="20" fill="#526567">×</text><text x="1310" y="704" text-anchor="middle" font-size="20" fill="#526567">÷</text>
+  <text x="1120" y="752" class="small muted">Hasil</text><rect x="1120" y="761" width="250" height="42" rx="7" class="stroke"/>
+  <text x="130" y="934" class="small muted">Aturan: urutan input → operasi → hasil harus terbaca tanpa dekorasi.</text>
+</svg>

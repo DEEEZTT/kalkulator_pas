@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kalkulator | Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="calculator">
+    <header class="calculator-header">
+      <span class="title-mark" aria-hidden="true">&plusmn;</span>
+      <div>
+        <h1>Kalkulator <span>Calculator</span></h1>
+        <p class="description">Masukkan dua angka dan pilih operasi.<br><span>Enter two numbers and choose an operation.</span></p>
+      </div>
+    </header>
+
+    <form id="calculator-form" novalidate>
+      <label for="angka-pertama">Angka pertama <span>First number</span></label>
+      <div class="input-row">
+        <input id="angka-pertama" class="angka" type="text" inputmode="decimal" placeholder="Contoh: 1.500 atau 12,5" autocomplete="off">
+        <button class="backspace" type="button" data-hapus="angka-pertama" aria-label="Hapus satu karakter dari angka pertama" title="Hapus satu karakter"><span aria-hidden="true">&#9003;</span></button>
+      </div>
+
+      <label for="angka-kedua">Angka kedua <span>Second number</span></label>
+      <div class="input-row">
+        <input id="angka-kedua" class="angka" type="text" inputmode="decimal" placeholder="Contoh: 1.500 atau 12,5" autocomplete="off">
+        <button class="backspace" type="button" data-hapus="angka-kedua" aria-label="Hapus satu karakter dari angka kedua" title="Hapus satu karakter"><span aria-hidden="true">&#9003;</span></button>
+      </div>
+
+      <fieldset>
+        <legend>Operasi <span>Operation</span></legend>
+        <div class="operations">
+          <button type="button" data-operasi="tambah" aria-label="Addition, penjumlahan" aria-pressed="false"><b>+</b><small>Addition</small></button>
+          <button type="button" data-operasi="kurang" aria-label="Subtraction, pengurangan" aria-pressed="false"><b>&minus;</b><small>Subtraction</small></button>
+          <button type="button" data-operasi="kali" aria-label="Multiplication, perkalian" aria-pressed="false"><b>&times;</b><small>Multiplication</small></button>
+          <button type="button" data-operasi="bagi" aria-label="Division, pembagian" aria-pressed="false"><b>&divide;</b><small>Division</small></button>
+        </div>
+      </fieldset>
+
+      <label for="hasil">Hasil <span>Result</span></label>
+      <input id="hasil" class="hasil" type="text" placeholder="Hasil / Result" readonly aria-live="polite">
+      <p id="rumus" aria-live="polite"></p>
+      <p id="pesan" role="status" aria-live="polite"></p>
+      <button class="clear" type="reset"><b aria-hidden="true">C</b> Bersihkan <span>Clear</span></button>
+    </form>
+    <section class="history" aria-labelledby="history-title">
+      <div class="history-heading">
+        <h2 id="history-title">Riwayat <span>History</span></h2>
+        <button id="hapus-riwayat" class="history-clear" type="button">Hapus riwayat</button>
+      </div>
+      <p id="riwayat-kosong">Belum ada perhitungan. / No calculations yet.</p>
+      <ol id="daftar-riwayat" aria-live="polite"></ol>
+    </section>
+  </main>
+</body>
+</html>

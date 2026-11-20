@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Panduan visual UI kalkulator</title>
+  <desc id="desc">Palet warna, tipografi, bentuk input, tombol operasi, state pilihan, pesan validasi, dan aturan tampilan kecil.</desc>
+  <defs><style>
+    text{font-family:Arial,Helvetica,sans-serif;fill:#1d383d}.muted{fill:#5c7071}.teal{fill:#16766f}.small{font-size:15px}.label{font-size:14px;font-weight:700;letter-spacing:1.4px}.title{font-size:40px;font-weight:700;letter-spacing:-1px}.section{font-size:21px;font-weight:700}.body{font-size:17px}.card{fill:#fbfcfa;stroke:#cbd8d5;stroke-width:2}
+  </style></defs>
+  <rect width="1600" height="1000" fill="#edf3f1"/>
+  <text x="95" y="94" class="label" fill="#16766f">RANCANGAN APLIKASI · 03</text>
+  <text x="95" y="155" class="title">Bahasa visual kalkulator.</text>
+  <text x="95" y="194" font-size="17" class="muted">Satu sistem kecil untuk menjaga layar tetap konsisten.</text>
+
+  <g transform="translate(95 250)">
+    <rect width="660" height="270" rx="14" class="card"/>
+    <text x="30" y="48" class="section">Warna</text>
+    <rect x="30" y="76" width="130" height="96" rx="9" fill="#edf3f1" stroke="#cbd8d5"/><text x="30" y="200" class="small">Latar</text><text x="30" y="225" class="small muted">#EDF3F1</text>
+    <rect x="185" y="76" width="130" height="96" rx="9" fill="#fbfcfa" stroke="#cbd8d5"/><text x="185" y="200" class="small">Panel</text><text x="185" y="225" class="small muted">#FBFCFA</text>
+    <rect x="340" y="76" width="130" height="96" rx="9" fill="#16766f"/><text x="340" y="200" class="small">Aksen utama</text><text x="340" y="225" class="small muted">#16766F</text>
+    <rect x="495" y="76" width="130" height="96" rx="9" fill="#a85e32"/><text x="495" y="200" class="small">Operasi dipilih</text><text x="495" y="225" class="small muted">#A85E32</text>
+  </g>
+
+  <g transform="translate(785 250)">
+    <rect width="720" height="270" rx="14" class="card"/>
+    <text x="30" y="48" class="section">Tipografi dan jarak</text>
+    <text x="30" y="103" font-size="28" font-weight="700">Angka mudah dibaca</text>
+    <text x="30" y="137" class="body muted">Arial atau sans-serif sistem · tanpa font eksternal</text>
+    <path d="M30 165H680" stroke="#dce6e2" stroke-width="2"/>
+    <text x="30" y="202" class="small">Judul layar</text><text x="210" y="202" class="small muted">32–42 px · tebal</text>
+    <text x="30" y="232" class="small">Label dan isi</text><text x="210" y="232" class="small muted">14–17 px · kontras jelas</text>
+  </g>
+
+  <g transform="translate(95 560)">
+    <rect width="850" height="330" rx="14" class="card"/>
+    <text x="30" y="48" class="section">Komponen dan state</text>
+    <text x="30" y="94" class="small muted">INPUT</text>
+    <rect x="30" y="108" width="300" height="50" rx="7" fill="#fff" stroke="#c7d4d5" stroke-width="2"/><text x="48" y="140" class="small" fill="#5b6c71">Contoh: 1.500 atau 12,5</text>
+    <text x="30" y="197" class="small muted">TOMBOL OPERASI</text>
+    <rect x="30" y="211" width="78" height="62" rx="8" fill="#176b70"/><text x="69" y="250" text-anchor="middle" font-size="27" fill="#fff">+</text>
+    <rect x="123" y="211" width="78" height="62" rx="8" fill="#a85e32"/><text x="162" y="250" text-anchor="middle" font-size="27" fill="#fff">÷</text>
+    <text x="221" y="235" class="small">normal</text><text x="221" y="260" class="small teal">dipilih</text>
+    <rect x="375" y="106" width="430" height="70" rx="8" fill="#f0f6f4" stroke="#b5ceca" stroke-width="2"/><text x="395" y="136" class="small muted">HASIL</text><text x="395" y="161" font-size="22" font-weight="700" fill="#155d5a">23 + 7 = 30</text>
+    <rect x="375" y="196" width="430" height="65" rx="8" fill="#fff2ef"/><text x="395" y="223" class="small" fill="#a53535">VALIDASI</text><text x="395" y="247" class="small" fill="#a53535">Tidak bisa membagi dengan nol.</text>
+  </g>
+  <g transform="translate(980 560)">
+    <rect width="525" height="330" rx="14" fill="#1d383d"/>
+    <text x="30" y="48" class="section" fill="#fff">Aturan penggunaan</text>
+    <circle cx="37" cy="96" r="4" fill="#8fc2b7"/><text x="53" y="102" font-size="16" fill="#e2ece9">Teal menandai aksi dan fokus.</text>
+    <circle cx="37" cy="142" r="4" fill="#8fc2b7"/><text x="53" y="148" font-size="16" fill="#e2ece9">Warna hangat hanya untuk pilihan aktif.</text>
+    <circle cx="37" cy="188" r="4" fill="#8fc2b7"/><text x="53" y="194" font-size="16" fill="#e2ece9">Pesan kesalahan selalu menjelaskan sebab.</text>
+    <circle cx="37" cy="234" r="4" fill="#8fc2b7"/><text x="53" y="240" font-size="16" fill="#e2ece9">Pada ponsel, operasi menjadi dua kolom.</text>
+    <circle cx="37" cy="280" r="4" fill="#8fc2b7"/><text x="53" y="286" font-size="16" fill="#e2ece9">Tidak ada data atau dekorasi rekaan.</text>
+  </g>
+  <text x="95" y="944" class="small muted">Gunakan aturan ini sebagai dasar; sesuaikan bila kebutuhan aplikasi berubah.</text>
+</svg>
